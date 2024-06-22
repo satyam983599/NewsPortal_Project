@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.navbar a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Homepage Styles */
+.homepage {
+  flex: 1;
+  padding: 20px;
+}
+
+.category-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.category-filter button {
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.category-filter button.active {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+/* Article Card Styles */
+.article-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.article-card img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.article-card h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.article-card p {
+  flex: 1;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.article-card a {
+  align-self: flex-start;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.article-card a:hover {
+  text-decoration: underline;
+}
+
+/* Hover Effect */
+.article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Article Detail Page Styles */
+.article-detail {
+  padding: 20px;
+}
+
+.article-detail img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  font-weight: bold;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
